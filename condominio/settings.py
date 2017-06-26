@@ -25,7 +25,7 @@ SECRET_KEY = '3^$hh4ch+!dhxl5g4aa!ev5x6(u#m&on-@tjjpvzt2(_6sczn8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vila-de-la-colina.herokuapp.com']
 
 
 # Application definition
