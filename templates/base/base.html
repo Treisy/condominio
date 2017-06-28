@@ -8,12 +8,13 @@
         Title
     {% endblock %}</title>
 
-    <link rel="stylesheet" href="{% static 'css/' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
 
     {% block header %}
         <h4>header</h4>
+        <button class="btn btn-danger">boton</button>
     {% endblock %}
 
 
@@ -26,7 +27,7 @@
         <p>footer</p>
     {% endblock %}
 
-    
-    <script src="{% static 'js/' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

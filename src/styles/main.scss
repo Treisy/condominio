@@ -1,0 +1,7 @@
+$icon-font-path: '../fonts/';
+
+@import "core/variables";
+
+// Custom Bootstrap
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/bootstrap";

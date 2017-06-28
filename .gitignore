@@ -1,4 +1,5 @@
 /.idea
 /env/
 /condominio/settings/local.py
-
+/node_modules/
+/bower_components/
