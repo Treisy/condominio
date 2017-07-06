@@ -1,0 +1,24 @@
+.form-control {
+	outline-style: none;
+	border-radius: 5px;
+	height: 35px;
+	padding: 10px 15px;
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+
+.form-horizontal {
+	.control-label {
+		padding-top: 0px;
+	}
+}
+
+@include breakpoint("tablet-up") {
+	.form-control {
+		//height: 55px;
+		padding: 10px 20px;
+	}
+}

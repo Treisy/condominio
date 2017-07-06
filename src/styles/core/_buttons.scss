@@ -1,0 +1,10 @@
+.btn {
+	border-radius: 8px;
+}
+
+
+@include breakpoint("tablet") {
+	//.btn {
+	//	padding: 15px 45px;
+	//}
+}

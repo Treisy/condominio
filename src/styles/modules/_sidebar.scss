@@ -1,0 +1,58 @@
+.sidebar-wrapper {
+	background-color: $background-navbar;
+	padding: 0;
+	display: none;
+	height: calc(100vh - 100px);
+
+	.options-wrapper {
+		padding: 0;
+
+		.main-options {
+			list-style: none;
+			line-height: 2;
+			padding: 0 15px 0 25px;
+			border-bottom: 1px solid $border-navbar;
+			height: 40px;
+
+			a{
+				color: $color-navbar;
+
+				&:hover {
+					color: $color-navbar-hover;
+				}
+			}
+
+			.link {
+				font-size: 2rem;
+			}
+
+			&:hover {
+
+			}
+		}
+	}
+
+	.sub-wrapper {
+		display: none;
+	}
+
+	.icon-menu {
+		font-size: 2.2rem;
+		line-height: 2;
+		height: 40px;
+		vertical-align: middle;
+	}
+
+	&.show {
+		display: block;
+		position: absolute;
+		width: 75%;
+		z-index: 1;
+		animation: left-to-right 2s linear;
+	}
+
+	@include breakpoint("tablet-up") {
+		display: block;
+	}
+
+}

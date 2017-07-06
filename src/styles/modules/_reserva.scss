@@ -1,0 +1,56 @@
+.reserva {
+	.panel {
+		.panel-heading {
+			padding: 5px 5px 0 5px;
+
+			.nav-tabs {
+				border-bottom: none;
+
+				& > li {
+					border-radius: 5px;
+
+					& > a {
+						color: $color-tab;
+
+						&:hover,
+						&:focus {
+							background-color: $background-tab;
+							border-color: transparent;
+						}
+					}
+
+					&.active {
+						color: $color-tab-hover;
+						background-color: $color-white;
+						border-color: $background-tab;
+						border-bottom-color: transparent;
+
+						&:hover,
+						&:focus {
+							color: $color-tab-hover;
+							background-color: $color-white;
+							border-color: $background-tab;
+							border-bottom-color: transparent;
+						}
+					}
+				}
+
+				.open {
+					& > a {
+						color: $color-tab;
+						background-color: $background-tab;
+						border-color: transparent;
+
+						&:hover,
+						&:focus {
+							color: $color-tab;
+							background-color: $background-tab;
+							border-color: transparent;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}

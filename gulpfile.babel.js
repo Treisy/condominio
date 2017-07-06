@@ -17,7 +17,7 @@ gulp.task('styles', () => {
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,
-      includePaths: ['.', 'bower_components/bootstrap-sass/assets/stylesheets/']
+      includePaths: ['.', 'bower_components/bootstrap-sass/assets/stylesheets/', 'bower_components/font-awesome/scss']
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['last 2 version']}))
     .pipe($.sourcemaps.write())
@@ -71,17 +71,17 @@ gulp.task('es6', () => {
     .pipe(gulp.dest('static/js'));
 });
 
-gulp.task('fonts', () => {
-  return gulp.src(require('main-bower-files')({
-    filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('src/fonts/**/*'))
-    .pipe(gulp.dest('.tmp/fonts'))
-    .pipe(gulp.dest('dist/fonts'));
-});
+// gulp.task('fonts', () => {
+//   return gulp.src(require('main-bower-files')({
+//     filter: '**/*.{eot,svg,ttf,woff,woff2}'
+//   }).concat('src/fonts/**/*'))
+//     .pipe(gulp.dest('.tmp/fonts'))
+//     .pipe(gulp.dest('dist/fonts'));
+// });
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'fonts', 'es6'], () => {
+gulp.task('serve', ['styles', 'es6'], () => {
   browserSync({
     notify: false,
     port: 9000,

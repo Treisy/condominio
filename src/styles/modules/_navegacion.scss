@@ -1,0 +1,28 @@
+.navbar-top {
+	background-color: $background-navbar;
+
+	.navbar-brand {
+		color: $color-black;
+	}
+
+	.sidebar-mobile {
+		margin-top: 14px;
+		margin-bottom: 14px;
+		border: none;
+		background-color: $background-navbar;
+		outline: none;
+
+		&:hover,
+		&:focus {
+			outline: none;
+		}
+
+		i {
+			font-size: 2.2rem;
+		}
+	}
+
+	.user {
+		float: right;
+	}
+}

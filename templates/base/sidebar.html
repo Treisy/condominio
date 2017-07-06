@@ -1,0 +1,33 @@
+<aside class="sidebar">
+    <ul class="options-wrapper">
+        <li class="main-options">
+            <a href="{% url 'home:home' %}" class="link">Inicio</a>
+            <i class="fa fa-home pull-right icon-menu"></i>
+        </li>
+        <li class="main-options">
+            <a href="#" class="link">Seguridad</a>
+            <i class="fa fa-lock pull-right icon-menu"></i>
+        </li>
+        <li class="main-options">
+            <a href="#" class="link">Configuraciones</a>
+            <i class="fa fa-cogs pull-right icon-menu"></i>
+        </li>
+        <li class="main-options">
+            <a href="{% url 'reserva:listado-reserva' %}" class="link">Reservas</a>
+{#            <i class="fa fa-caret-right icon"></i>#}
+            <i class="fa fa-calendar pull-right icon-menu"></i>
+            <ul class="sub-wrapper">
+                <li><a href="{% url 'reserva:listado-reserva' %}">Listado de reservas</a></li>
+                <li><a href="{% url 'reserva:reservas' %}">Crear reserva</a></li>
+            </ul>
+        </li>
+        <li class="main-options">
+            <a href="#" class="link">Filiales</a>
+            <i class="fa fa-group pull-right icon-menu"></i>
+        </li>
+        <li class="main-options">
+            <a href="#" class="link">Reportes</a>
+            <i class="fa fa-pie-chart pull-right icon-menu"></i>
+        </li>
+    </ul>
+</aside>

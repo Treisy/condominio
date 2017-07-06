@@ -1,0 +1,21 @@
+a {
+	outline: none;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&:visited {
+		outline: none;
+	}
+}
+
+ul {
+	li {
+		list-style: none;
+	}
+}
+
+.icon {
+	margin-left: 7px;
+}
+

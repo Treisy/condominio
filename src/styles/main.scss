@@ -5,3 +5,27 @@ $icon-font-path: '../fonts/';
 // Custom Bootstrap
 @import "vendors/bootstrap/variables";
 @import "vendors/bootstrap/bootstrap";
+
+// Custom Font-awesome
+@import "vendors/font-awesome/font-awesome";
+
+
+// Custom Helpers
+@import "helpers/mixins";
+@import "helpers/animations";
+@import "helpers/utils";
+@import "core/forms";
+
+
+// Core
+@import "core/tables";
+@import "core/buttons";
+@import "core/typo";
+
+
+// Custom modules
+@import "modules/navegacion";
+@import "modules/sidebar";
+@import "modules/footer";
+@import "modules/reserva-list";
+@import "modules/reserva";

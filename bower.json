@@ -5,15 +5,20 @@
     "jquery": "~2.1.1",
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "susy": "~2.2.5"
+    "susy": "~2.2.5",
+    "normalize-scss": "normalize.scss#^7.0.0",
+    "font-awesome": "fontawesome#^4.7.0",
+    "fullcalendar": "^3.4.0"
   },
   "overrides": {
     "bootstrap-sass": {
       "main": [
-        "assets/stylesheets/_bootstrap.scss",
+//        "assets/stylesheets/_bootstrap.scss",
+        "assets/"
         "assets/javascripts/bootstrap/transition.js",
         "assets/javascripts/bootstrap/modal.js",
         "assets/javascripts/bootstrap/collapse.js"
+        "assets/javascripts/bootstrap/dropdown.js"
       ]
     }
   },
