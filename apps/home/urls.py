@@ -17,6 +17,7 @@ Including another URLconf
 from django.conf.urls import url
 from apps.home.views import home
 
+
 urlpatterns = [
     url(r'^$', home, name='home'),
 ]

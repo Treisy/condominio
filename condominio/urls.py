@@ -24,7 +24,7 @@ from django.contrib.auth.views import login
 admin.site.site_header = production.ADMIN_SITE_HEADER
 
 urlpatterns = [
-    # url(r'^$', login, {'template_name': 'index.html'}, name='login'),
+    url(r'^$', login, {'template_name': 'home/login.html'}, name='login'),
     url(r'^admin/', admin.site.urls),
     url(r'^home/', include('apps.home.urls', namespace="home")),
     url(r'^reserva/', include('apps.reserva.urls', namespace="reserva")),
